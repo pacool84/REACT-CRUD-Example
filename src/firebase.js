@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 var firebaseConfig = {
   apiKey: "AIzaSyB4ntIlgGOf9RSAUzfzCeo-sc1qCuz7aG4",
   authDomain: "agenda-crud-e08ad.firebaseapp.com",
