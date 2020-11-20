@@ -1,7 +1,9 @@
+import React from "react";
 import "./App.css";
+import Links from "./components/Links";
 
 function App() {
-  return <h1>Hello My friend CRUD - Firebase</h1>;
+  return <Links />;
 }
 
 export default App;
