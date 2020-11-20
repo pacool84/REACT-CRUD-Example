@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <LinkForm />
-      <Links />;
+      <Links />
     </>
   );
 }
