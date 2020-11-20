@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 const LinkForm = () => {
+  /* Manera de delcarar el estado de la app */
+
+  const [values, setValues] = useState({
+    url: "",
+    name: "",
+    description: "",
+  });
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e);
