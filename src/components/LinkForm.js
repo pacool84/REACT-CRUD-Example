@@ -11,9 +11,15 @@ const LinkForm = () => {
 
   const [values, setValues] = useState(initialStateValues);
 
+  /* Manera de actualizar el estado con los datos ingresados en el formulario */
+
+  const handleInputChange = (e) => {
+    console.log(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    console.log(values);
   };
 
   return (
@@ -27,6 +33,7 @@ const LinkForm = () => {
           className='form-control'
           placeholder='https://something.com'
           name='url'
+          onChange={handleInputChange}
         />
       </div>
       <div className='form-group input-group'>
@@ -38,6 +45,7 @@ const LinkForm = () => {
           className='form-control'
           name='name'
           placeholder='Website Name'
+          onChange={handleInputChange}
         />
       </div>
       <div className='form-group'>
@@ -46,6 +54,7 @@ const LinkForm = () => {
           rows='3'
           className='form-control'
           placeholder='Write a description'
+          onChange={handleInputChange}
         ></textarea>
       </div>
       <button className='btn btn-primary btn-block'>Save</button>
