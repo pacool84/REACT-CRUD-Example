@@ -14,7 +14,14 @@ const LinkForm = () => {
   /* Manera de actualizar el estado con los datos ingresados en el formulario */
 
   const handleInputChange = (e) => {
-    console.log(e.target.value);
+    /*  const { name, value, type, placeholder } = e.target;
+    console.log(name, value, type, placeholder); */
+
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value,
+    }); /* Esto es clave {...values} copia los valores y el "[name]: value" altera la propiedad de la etiqueta con el valor que esten insertando en el formulario */
   };
 
   const handleSubmit = (e) => {
